@@ -16,7 +16,7 @@ public class ConfigLoadListener extends ContextLoaderListener {
     @Override
     public WebApplicationContext initWebApplicationContext(ServletContext servletContext) {
         // // TODO: 2017/1/20 配合disconf来读取配置文件
-        logger.info("WebApplicationContext---initWebApplicationContext");
+        logger.info("WebApplicationContext----initWebApplicationContext");
         return super.initWebApplicationContext(servletContext);
     }
 }
