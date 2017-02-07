@@ -73,7 +73,31 @@
             </exclusions>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.sgroschupf</groupId>
+            <artifactId>zkclient</artifactId>
+        </dependency>
+
         <!--*********************************************zookeeper end*********************************************-->
+
+        <!--*********************************************dubbo start*********************************************-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>log4j</artifactId>
+                    <groupId>log4j</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--*********************************************dubbo end*********************************************-->
+
+        <dependency>
+            <groupId>com.catcher92.demo</groupId>
+            <artifactId>providerdemo</artifactId>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>

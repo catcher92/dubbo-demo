@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="true" scanPeriod="10 seconds" debug="true">
-    <property name="LOG_HOME" value="/log/tomcat"/>
+    <property resource="conf/dubbo.properties" />
+    <property name="LOG_HOME" value="/log/dubbo"/>
     <property name="LOG_NAME" value="dubbo-consumer-log"/>
     <timestamp key="byDate" datePattern="yyyyMMdd"/>
 
@@ -10,7 +11,7 @@
             <immediateFlush>true</immediateFlush>
         </encoder>
     </appender>
-
+    <!-- file log -->
     <appender name="fileRolling" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_HOME}/${LOG_NAME}/${LOG_NAME}.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
@@ -26,9 +27,13 @@
         </encoder>
     </appender>
 
+    <logger name="com.alibaba.dubbo.config.AbstractConfig" level="INFO" additivity="true"></logger>
+    <logger name="org.apache.zookeeper.ZooKeeper" level="OFF" additivity="true"></logger>
+    <logger name="org.apache.zookeeper.ClientCnxn" level="OFF" additivity="true"></logger>
     <logger name="org.springframework" level="INFO" additivity="true"></logger>
 
-    <root level="DEBUG">
+    <root level="${dubbo.logback.level}">
         <appender-ref ref="STDOUT"/>
+        <appender-ref ref="fileRolling" />
     </root>
 </configuration>

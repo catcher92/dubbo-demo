@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<dubbo:registry register="${dubbo.registry.register}" address="${dubbo.registry.address}" />
+    <dubbo:application name="${dubbo.application.name}" owner="${dubbo.application.owner}" logger="${dubbo.application.logger}" />
+    <dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" serialization="${dubbo.protocol.serialization}" accesslog="${dubbo.protocol.accesslog}" />
+    <!-- 设置所有接口失败重试retries="0" -->
+    <dubbo:provider retries="0" />
+	<!--使用dubbo monitor监控-->
+	<dubbo:monitor protocol="registry"/>
+
+	<dubbo:service interface="com.catcher92.demo.provider.interfaces.ProviderDemoService1" ref="providerDemoService1Impl" owner="${developer.no.1}" timeout="5000" />
+	
+</beans>
