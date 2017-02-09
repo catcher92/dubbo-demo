@@ -24,6 +24,7 @@ public class MybatisGenerator {
         filePath = filePath.substring(0, filePath.lastIndexOf(File.separator))
                 + File.separator + "classes" +File.separator +"generator" +File.separator + "generatorConfig.xml";
         System.out.println(filePath);
+
         File configFile = new File(filePath);
         List<String> warnings = new ArrayList<>();
         boolean override = true;
@@ -32,14 +33,16 @@ public class MybatisGenerator {
         MyBatisGenerator myBatisGenerator;
         DefaultShellCallback shellCallback = new DefaultShellCallback(override);
         try {
-            // shellCallback.getDirectory("src/main/java", "com.catcher92.demo.po");
-            // shellCallback.getDirectory("src/main/resources", "mapper");
             config = cp.parseConfiguration(configFile);
             myBatisGenerator = new MyBatisGenerator(config, shellCallback, warnings);
             myBatisGenerator.generate(null);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        warnings.forEach(e -> System.out.println(e));
+        if (warnings.isEmpty()) {
+            System.out.println("生成完成！");
+        } else {
+            warnings.forEach(e -> System.out.println(e));
+        }
     }
 }
