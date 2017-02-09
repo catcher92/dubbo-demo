@@ -33,7 +33,11 @@
         <!-- beginningDelimiter和endingDelimiter：指明数据库的用于标记数据库对象名的符号，比如ORACLE就是双引号，MYSQL默认是`反引号； -->
         <property name="beginningDelimiter" value="`"/>
         <property name="endingDelimiter" value="`"/>
-        <!---->
+        <!--model中实现序列化-->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
+        <!--mapper都继承自BaseMapper-->
+        <plugin type="com.catcher92.demo.framework.plugin.MyMapperGenerator"></plugin>
+        <!--自定义注释生成内容-->
         <commentGenerator type="com.catcher92.demo.framework.plugin.MyCommentGenerator">
             <!--<property name="suppressAllComments" value="true" />-->
             <property name="addRemarkComments" value="true" />
@@ -72,7 +76,7 @@
             3，XMLMAPPER：会生成Mapper接口，接口完全依赖XML；
         注意，如果context是MyBatis3Simple：只支持ANNOTATEDMAPPER和XMLMAPPER
         -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.catcher92.demo.mapper" targetProject="src/main/java">
+        <javaClientGenerator type="com.catcher92.demo.framework.plugin.MyJavaMapperGenerator" targetPackage="com.catcher92.demo.mapper" targetProject="src/main/java">
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
         <!-- 要生成那些表(更改tableName和domainObjectName就可以) -->
