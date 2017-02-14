@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class DeptPoExample {
+public class DepartmentPoExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public DeptPoExample() {
+    public DepartmentPoExample() {
         oredCriteria = new ArrayList<Criteria>();
     }
 

@@ -7,7 +7,7 @@ import com.catcher92.demo.framework.bean.BaseEntity;
 import java.io.Serializable;
 import java.util.Date;
 
-public class DeptPo extends BaseEntity implements Serializable {
+public class DepartmentPo extends BaseEntity implements Serializable {
     /**
      * 部门名称
      */

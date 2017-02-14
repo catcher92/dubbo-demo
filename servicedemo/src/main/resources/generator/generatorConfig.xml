@@ -82,7 +82,7 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
         <!-- 要生成那些表(更改tableName和domainObjectName就可以) -->
-        <table tableName="biz_dept" domainObjectName="DeptPo">
+        <table tableName="biz_dept" domainObjectName="DepartmentPo">
             <!-- generatedKey用于生成生成主键的方法，
             如果设置了该元素，MBG会在生成的<insert>元素中生成一条正确的<selectKey>元素，该元素可选
             column:主键的列名；
