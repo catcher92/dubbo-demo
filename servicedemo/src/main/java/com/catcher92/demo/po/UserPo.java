@@ -19,11 +19,6 @@ public class UserPo extends BaseEntity implements Serializable {
     private String password;
 
     /**
-     * 部门id
-     */
-    private Long deptId;
-
-    /**
      * 邮箱
      */
     private String email;
@@ -34,7 +29,7 @@ public class UserPo extends BaseEntity implements Serializable {
     private Boolean lockStatus;
 
     /**
-     * 锁定状态 0未删除，1已删除
+     * 删除状态 0未删除，1已删除
      */
     private Boolean deleteStatus;
 
@@ -97,24 +92,6 @@ public class UserPo extends BaseEntity implements Serializable {
     }
 
     /**
-     * 部门id
-     *
-     * @return deptId
-     */
-    public Long getDeptId() {
-        return deptId;
-    }
-
-    /**
-     * 部门id
-     *
-     * @param deptId
-     */
-    public void setDeptId(Long deptId) {
-        this.deptId = deptId;
-    }
-
-    /**
      * 邮箱
      *
      * @return email
@@ -151,7 +128,7 @@ public class UserPo extends BaseEntity implements Serializable {
     }
 
     /**
-     * 锁定状态 0未删除，1已删除
+     * 删除状态 0未删除，1已删除
      *
      * @return deleteStatus
      */
@@ -160,7 +137,7 @@ public class UserPo extends BaseEntity implements Serializable {
     }
 
     /**
-     * 锁定状态 0未删除，1已删除
+     * 删除状态 0未删除，1已删除
      *
      * @param deleteStatus
      */

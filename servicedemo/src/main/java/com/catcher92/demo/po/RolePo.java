@@ -7,11 +7,16 @@ import com.catcher92.demo.framework.bean.BaseEntity;
 import java.io.Serializable;
 import java.util.Date;
 
-public class DeptPo extends BaseEntity implements Serializable {
+public class RolePo extends BaseEntity implements Serializable {
     /**
-     * 部门名称
+     * 名称
      */
     private String name;
+
+    /**
+     * 描述
+     */
+    private String description;
 
     /**
      * 删除状态 0未删除，1已删除
@@ -41,7 +46,7 @@ public class DeptPo extends BaseEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 部门名称
+     * 名称
      *
      * @return name
      */
@@ -50,12 +55,30 @@ public class DeptPo extends BaseEntity implements Serializable {
     }
 
     /**
-     * 部门名称
+     * 名称
      *
      * @param name
      */
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
+    }
+
+    /**
+     * 描述
+     *
+     * @return description
+     */
+    public String getDescription() {
+        return description;
+    }
+
+    /**
+     * 描述
+     *
+     * @param description
+     */
+    public void setDescription(String description) {
+        this.description = description == null ? null : description.trim();
     }
 
     /**

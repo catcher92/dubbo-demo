@@ -37,6 +37,8 @@
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
         <!--mapper都继承自BaseMapper-->
         <plugin type="com.catcher92.demo.framework.plugin.MyMapperGenerator"></plugin>
+        <!--sql mapper文件-->
+        <plugin type="org.mybatis.generator.plugins.MapperConfigPlugin"></plugin>
         <!--自定义注释生成内容-->
         <commentGenerator type="com.catcher92.demo.framework.plugin.MyCommentGenerator">
             <!--<property name="suppressAllComments" value="true" />-->
@@ -99,6 +101,18 @@
             <generatedKey column="ID" sqlStatement="JDBC" />
         </table>
         <table tableName="biz_user" domainObjectName="UserPo">
+            <generatedKey column="ID" sqlStatement="JDBC" />
+        </table>
+        <table tableName="biz_resource" domainObjectName="ResourcePo">
+            <generatedKey column="ID" sqlStatement="JDBC" />
+        </table>
+        <table tableName="biz_role" domainObjectName="RolePo">
+            <generatedKey column="ID" sqlStatement="JDBC" />
+        </table>
+        <table tableName="biz_role_resource_link" domainObjectName="RoleResourceLink">
+            <generatedKey column="ID" sqlStatement="JDBC" />
+        </table>
+        <table tableName="biz_user_dept_role_link" domainObjectName="UserDeptRoleLink">
             <generatedKey column="ID" sqlStatement="JDBC" />
         </table>
     </context>

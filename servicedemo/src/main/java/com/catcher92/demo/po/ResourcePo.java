@@ -7,9 +7,9 @@ import com.catcher92.demo.framework.bean.BaseEntity;
 import java.io.Serializable;
 import java.util.Date;
 
-public class DeptPo extends BaseEntity implements Serializable {
+public class ResourcePo extends BaseEntity implements Serializable {
     /**
-     * 部门名称
+     * 资源名
      */
     private String name;
 
@@ -41,7 +41,7 @@ public class DeptPo extends BaseEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 部门名称
+     * 资源名
      *
      * @return name
      */
@@ -50,7 +50,7 @@ public class DeptPo extends BaseEntity implements Serializable {
     }
 
     /**
-     * 部门名称
+     * 资源名
      *
      * @param name
      */

@@ -7,11 +7,26 @@ import com.catcher92.demo.framework.bean.BaseEntity;
 import java.io.Serializable;
 import java.util.Date;
 
-public class DeptPo extends BaseEntity implements Serializable {
+public class UserDeptRoleLink extends BaseEntity implements Serializable {
     /**
-     * 部门名称
+     * 用户id
      */
-    private String name;
+    private Long userId;
+
+    /**
+     * 部门id
+     */
+    private Long deptId;
+
+    /**
+     * 角色id
+     */
+    private Long roleId;
+
+    /**
+     * 是否兼职 0主职，1兼职
+     */
+    private Boolean isParttime;
 
     /**
      * 删除状态 0未删除，1已删除
@@ -41,21 +56,75 @@ public class DeptPo extends BaseEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 部门名称
+     * 用户id
      *
-     * @return name
+     * @return userId
      */
-    public String getName() {
-        return name;
+    public Long getUserId() {
+        return userId;
     }
 
     /**
-     * 部门名称
+     * 用户id
      *
-     * @param name
+     * @param userId
      */
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    /**
+     * 部门id
+     *
+     * @return deptId
+     */
+    public Long getDeptId() {
+        return deptId;
+    }
+
+    /**
+     * 部门id
+     *
+     * @param deptId
+     */
+    public void setDeptId(Long deptId) {
+        this.deptId = deptId;
+    }
+
+    /**
+     * 角色id
+     *
+     * @return roleId
+     */
+    public Long getRoleId() {
+        return roleId;
+    }
+
+    /**
+     * 角色id
+     *
+     * @param roleId
+     */
+    public void setRoleId(Long roleId) {
+        this.roleId = roleId;
+    }
+
+    /**
+     * 是否兼职 0主职，1兼职
+     *
+     * @return isParttime
+     */
+    public Boolean getIsParttime() {
+        return isParttime;
+    }
+
+    /**
+     * 是否兼职 0主职，1兼职
+     *
+     * @param isParttime
+     */
+    public void setIsParttime(Boolean isParttime) {
+        this.isParttime = isParttime;
     }
 
     /**

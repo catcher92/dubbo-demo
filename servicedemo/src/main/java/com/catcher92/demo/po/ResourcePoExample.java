@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class UserPoExample {
+public class ResourcePoExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public UserPoExample() {
+    public ResourcePoExample() {
         oredCriteria = new ArrayList<Criteria>();
     }
 
@@ -235,206 +235,6 @@ public class UserPoExample {
 
         public Criteria andNameNotBetween(String value1, String value2) {
             addCriterion("name not between", value1, value2, "name");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordIsNull() {
-            addCriterion("password is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordIsNotNull() {
-            addCriterion("password is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordEqualTo(String value) {
-            addCriterion("password =", value, "password");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordNotEqualTo(String value) {
-            addCriterion("password <>", value, "password");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordGreaterThan(String value) {
-            addCriterion("password >", value, "password");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordGreaterThanOrEqualTo(String value) {
-            addCriterion("password >=", value, "password");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordLessThan(String value) {
-            addCriterion("password <", value, "password");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordLessThanOrEqualTo(String value) {
-            addCriterion("password <=", value, "password");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordLike(String value) {
-            addCriterion("password like", value, "password");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordNotLike(String value) {
-            addCriterion("password not like", value, "password");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordIn(List<String> values) {
-            addCriterion("password in", values, "password");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordNotIn(List<String> values) {
-            addCriterion("password not in", values, "password");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordBetween(String value1, String value2) {
-            addCriterion("password between", value1, value2, "password");
-            return (Criteria) this;
-        }
-
-        public Criteria andPasswordNotBetween(String value1, String value2) {
-            addCriterion("password not between", value1, value2, "password");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailIsNull() {
-            addCriterion("email is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailIsNotNull() {
-            addCriterion("email is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailEqualTo(String value) {
-            addCriterion("email =", value, "email");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailNotEqualTo(String value) {
-            addCriterion("email <>", value, "email");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailGreaterThan(String value) {
-            addCriterion("email >", value, "email");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailGreaterThanOrEqualTo(String value) {
-            addCriterion("email >=", value, "email");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailLessThan(String value) {
-            addCriterion("email <", value, "email");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailLessThanOrEqualTo(String value) {
-            addCriterion("email <=", value, "email");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailLike(String value) {
-            addCriterion("email like", value, "email");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailNotLike(String value) {
-            addCriterion("email not like", value, "email");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailIn(List<String> values) {
-            addCriterion("email in", values, "email");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailNotIn(List<String> values) {
-            addCriterion("email not in", values, "email");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailBetween(String value1, String value2) {
-            addCriterion("email between", value1, value2, "email");
-            return (Criteria) this;
-        }
-
-        public Criteria andEmailNotBetween(String value1, String value2) {
-            addCriterion("email not between", value1, value2, "email");
-            return (Criteria) this;
-        }
-
-        public Criteria andLockStatusIsNull() {
-            addCriterion("lock_status is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andLockStatusIsNotNull() {
-            addCriterion("lock_status is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andLockStatusEqualTo(Boolean value) {
-            addCriterion("lock_status =", value, "lockStatus");
-            return (Criteria) this;
-        }
-
-        public Criteria andLockStatusNotEqualTo(Boolean value) {
-            addCriterion("lock_status <>", value, "lockStatus");
-            return (Criteria) this;
-        }
-
-        public Criteria andLockStatusGreaterThan(Boolean value) {
-            addCriterion("lock_status >", value, "lockStatus");
-            return (Criteria) this;
-        }
-
-        public Criteria andLockStatusGreaterThanOrEqualTo(Boolean value) {
-            addCriterion("lock_status >=", value, "lockStatus");
-            return (Criteria) this;
-        }
-
-        public Criteria andLockStatusLessThan(Boolean value) {
-            addCriterion("lock_status <", value, "lockStatus");
-            return (Criteria) this;
-        }
-
-        public Criteria andLockStatusLessThanOrEqualTo(Boolean value) {
-            addCriterion("lock_status <=", value, "lockStatus");
-            return (Criteria) this;
-        }
-
-        public Criteria andLockStatusIn(List<Boolean> values) {
-            addCriterion("lock_status in", values, "lockStatus");
-            return (Criteria) this;
-        }
-
-        public Criteria andLockStatusNotIn(List<Boolean> values) {
-            addCriterion("lock_status not in", values, "lockStatus");
-            return (Criteria) this;
-        }
-
-        public Criteria andLockStatusBetween(Boolean value1, Boolean value2) {
-            addCriterion("lock_status between", value1, value2, "lockStatus");
-            return (Criteria) this;
-        }
-
-        public Criteria andLockStatusNotBetween(Boolean value1, Boolean value2) {
-            addCriterion("lock_status not between", value1, value2, "lockStatus");
             return (Criteria) this;
         }
 
@@ -761,7 +561,7 @@ public class UserPoExample {
 
     /**
      * This class was generated by MyBatis Generator.
-     * This class corresponds to the database table biz_user
+     * This class corresponds to the database table biz_resource
      *
      * @mbg.generated do_not_delete_during_merge
      */

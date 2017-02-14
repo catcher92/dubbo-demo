@@ -30,11 +30,11 @@ public class MybatisGenerator {
         boolean override = true;
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config;
-        MyBatisGenerator myBatisGenerator;
+        OverrideMyBatisGenerator myBatisGenerator;
         DefaultShellCallback shellCallback = new DefaultShellCallback(override);
         try {
             config = cp.parseConfiguration(configFile);
-            myBatisGenerator = new MyBatisGenerator(config, shellCallback, warnings);
+            myBatisGenerator = new OverrideMyBatisGenerator(config, shellCallback, warnings);
             myBatisGenerator.generate(null);
         } catch (Exception e) {
             e.printStackTrace();
