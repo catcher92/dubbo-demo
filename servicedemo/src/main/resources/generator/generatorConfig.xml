@@ -37,6 +37,8 @@
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
         <!--mapper都继承自BaseMapper-->
         <plugin type="com.catcher92.demo.framework.plugin.MyMapperGenerator"></plugin>
+        <!--example都继承自BaseExample-->
+        <plugin type="com.catcher92.demo.framework.plugin.MyExampleGenerator"></plugin>
         <!--sql mapper文件-->
         <plugin type="org.mybatis.generator.plugins.MapperConfigPlugin"></plugin>
         <!--自定义注释生成内容-->
