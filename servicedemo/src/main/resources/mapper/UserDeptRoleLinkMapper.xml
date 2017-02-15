@@ -9,8 +9,8 @@
     <result column="user_id" jdbcType="BIGINT" property="userId" />
     <result column="dept_id" jdbcType="BIGINT" property="deptId" />
     <result column="role_id" jdbcType="BIGINT" property="roleId" />
-    <result column="is_parttime" jdbcType="BIT" property="isParttime" />
-    <result column="delete_status" jdbcType="BIT" property="deleteStatus" />
+    <result column="is_parttime" jdbcType="INTEGER" property="isParttime" />
+    <result column="delete_status" jdbcType="INTEGER" property="deleteStatus" />
     <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
     <result column="create_by" jdbcType="VARCHAR" property="createBy" />
     <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
@@ -138,7 +138,7 @@
       create_by, update_date, update_by
       )
     values (#{userId,jdbcType=BIGINT}, #{deptId,jdbcType=BIGINT}, #{roleId,jdbcType=BIGINT}, 
-      #{isParttime,jdbcType=BIT}, #{deleteStatus,jdbcType=BIT}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{isParttime,jdbcType=INTEGER}, #{deleteStatus,jdbcType=INTEGER}, #{createDate,jdbcType=TIMESTAMP}, 
       #{createBy,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP}, #{updateBy,jdbcType=VARCHAR}
       )
   </insert>
@@ -187,10 +187,10 @@
         #{roleId,jdbcType=BIGINT},
       </if>
       <if test="isParttime != null">
-        #{isParttime,jdbcType=BIT},
+        #{isParttime,jdbcType=INTEGER},
       </if>
       <if test="deleteStatus != null">
-        #{deleteStatus,jdbcType=BIT},
+        #{deleteStatus,jdbcType=INTEGER},
       </if>
       <if test="createDate != null">
         #{createDate,jdbcType=TIMESTAMP},
@@ -234,10 +234,10 @@
         role_id = #{record.roleId,jdbcType=BIGINT},
       </if>
       <if test="record.isParttime != null">
-        is_parttime = #{record.isParttime,jdbcType=BIT},
+        is_parttime = #{record.isParttime,jdbcType=INTEGER},
       </if>
       <if test="record.deleteStatus != null">
-        delete_status = #{record.deleteStatus,jdbcType=BIT},
+        delete_status = #{record.deleteStatus,jdbcType=INTEGER},
       </if>
       <if test="record.createDate != null">
         create_date = #{record.createDate,jdbcType=TIMESTAMP},
@@ -265,8 +265,8 @@
       user_id = #{record.userId,jdbcType=BIGINT},
       dept_id = #{record.deptId,jdbcType=BIGINT},
       role_id = #{record.roleId,jdbcType=BIGINT},
-      is_parttime = #{record.isParttime,jdbcType=BIT},
-      delete_status = #{record.deleteStatus,jdbcType=BIT},
+      is_parttime = #{record.isParttime,jdbcType=INTEGER},
+      delete_status = #{record.deleteStatus,jdbcType=INTEGER},
       create_date = #{record.createDate,jdbcType=TIMESTAMP},
       create_by = #{record.createBy,jdbcType=VARCHAR},
       update_date = #{record.updateDate,jdbcType=TIMESTAMP},
@@ -291,10 +291,10 @@
         role_id = #{roleId,jdbcType=BIGINT},
       </if>
       <if test="isParttime != null">
-        is_parttime = #{isParttime,jdbcType=BIT},
+        is_parttime = #{isParttime,jdbcType=INTEGER},
       </if>
       <if test="deleteStatus != null">
-        delete_status = #{deleteStatus,jdbcType=BIT},
+        delete_status = #{deleteStatus,jdbcType=INTEGER},
       </if>
       <if test="createDate != null">
         create_date = #{createDate,jdbcType=TIMESTAMP},
@@ -319,8 +319,8 @@
     set user_id = #{userId,jdbcType=BIGINT},
       dept_id = #{deptId,jdbcType=BIGINT},
       role_id = #{roleId,jdbcType=BIGINT},
-      is_parttime = #{isParttime,jdbcType=BIT},
-      delete_status = #{deleteStatus,jdbcType=BIT},
+      is_parttime = #{isParttime,jdbcType=INTEGER},
+      delete_status = #{deleteStatus,jdbcType=INTEGER},
       create_date = #{createDate,jdbcType=TIMESTAMP},
       create_by = #{createBy,jdbcType=VARCHAR},
       update_date = #{updateDate,jdbcType=TIMESTAMP},

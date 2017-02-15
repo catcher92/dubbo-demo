@@ -26,12 +26,12 @@ public class UserDeptRoleLink extends BaseEntity implements Serializable {
     /**
      * 是否兼职 0主职，1兼职
      */
-    private Boolean isParttime;
+    private Integer isParttime;
 
     /**
      * 删除状态 0未删除，1已删除
      */
-    private Boolean deleteStatus;
+    private Integer deleteStatus;
 
     /**
      * 创建时间
@@ -114,7 +114,7 @@ public class UserDeptRoleLink extends BaseEntity implements Serializable {
      *
      * @return isParttime
      */
-    public Boolean getIsParttime() {
+    public Integer getIsParttime() {
         return isParttime;
     }
 
@@ -123,7 +123,7 @@ public class UserDeptRoleLink extends BaseEntity implements Serializable {
      *
      * @param isParttime
      */
-    public void setIsParttime(Boolean isParttime) {
+    public void setIsParttime(Integer isParttime) {
         this.isParttime = isParttime;
     }
 
@@ -132,7 +132,7 @@ public class UserDeptRoleLink extends BaseEntity implements Serializable {
      *
      * @return deleteStatus
      */
-    public Boolean getDeleteStatus() {
+    public Integer getDeleteStatus() {
         return deleteStatus;
     }
 
@@ -141,7 +141,7 @@ public class UserDeptRoleLink extends BaseEntity implements Serializable {
      *
      * @param deleteStatus
      */
-    public void setDeleteStatus(Boolean deleteStatus) {
+    public void setDeleteStatus(Integer deleteStatus) {
         this.deleteStatus = deleteStatus;
     }
 

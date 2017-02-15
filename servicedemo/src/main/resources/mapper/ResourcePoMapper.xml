@@ -7,7 +7,7 @@
     -->
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="delete_status" jdbcType="BIT" property="deleteStatus" />
+    <result column="delete_status" jdbcType="INTEGER" property="deleteStatus" />
     <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
     <result column="create_by" jdbcType="VARCHAR" property="createBy" />
     <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
@@ -132,7 +132,7 @@
     insert into biz_resource (name, delete_status, create_date, 
       create_by, update_date, update_by
       )
-    values (#{name,jdbcType=VARCHAR}, #{deleteStatus,jdbcType=BIT}, #{createDate,jdbcType=TIMESTAMP}, 
+    values (#{name,jdbcType=VARCHAR}, #{deleteStatus,jdbcType=INTEGER}, #{createDate,jdbcType=TIMESTAMP}, 
       #{createBy,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP}, #{updateBy,jdbcType=VARCHAR}
       )
   </insert>
@@ -166,7 +166,7 @@
         #{name,jdbcType=VARCHAR},
       </if>
       <if test="deleteStatus != null">
-        #{deleteStatus,jdbcType=BIT},
+        #{deleteStatus,jdbcType=INTEGER},
       </if>
       <if test="createDate != null">
         #{createDate,jdbcType=TIMESTAMP},
@@ -204,7 +204,7 @@
         name = #{record.name,jdbcType=VARCHAR},
       </if>
       <if test="record.deleteStatus != null">
-        delete_status = #{record.deleteStatus,jdbcType=BIT},
+        delete_status = #{record.deleteStatus,jdbcType=INTEGER},
       </if>
       <if test="record.createDate != null">
         create_date = #{record.createDate,jdbcType=TIMESTAMP},
@@ -230,7 +230,7 @@
     update biz_resource
     set id = #{record.id,jdbcType=BIGINT},
       name = #{record.name,jdbcType=VARCHAR},
-      delete_status = #{record.deleteStatus,jdbcType=BIT},
+      delete_status = #{record.deleteStatus,jdbcType=INTEGER},
       create_date = #{record.createDate,jdbcType=TIMESTAMP},
       create_by = #{record.createBy,jdbcType=VARCHAR},
       update_date = #{record.updateDate,jdbcType=TIMESTAMP},
@@ -249,7 +249,7 @@
         name = #{name,jdbcType=VARCHAR},
       </if>
       <if test="deleteStatus != null">
-        delete_status = #{deleteStatus,jdbcType=BIT},
+        delete_status = #{deleteStatus,jdbcType=INTEGER},
       </if>
       <if test="createDate != null">
         create_date = #{createDate,jdbcType=TIMESTAMP},
@@ -272,7 +272,7 @@
     -->
     update biz_resource
     set name = #{name,jdbcType=VARCHAR},
-      delete_status = #{deleteStatus,jdbcType=BIT},
+      delete_status = #{deleteStatus,jdbcType=INTEGER},
       create_date = #{createDate,jdbcType=TIMESTAMP},
       create_by = #{createBy,jdbcType=VARCHAR},
       update_date = #{updateDate,jdbcType=TIMESTAMP},

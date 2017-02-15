@@ -3,11 +3,12 @@
  */
 package com.catcher92.demo.po;
 
+import com.catcher92.demo.framework.bean.BaseExample;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class UserPoExample {
+public class UserPoExample extends BaseExample {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -388,52 +389,52 @@ public class UserPoExample {
             return (Criteria) this;
         }
 
-        public Criteria andLockStatusEqualTo(Boolean value) {
+        public Criteria andLockStatusEqualTo(Integer value) {
             addCriterion("lock_status =", value, "lockStatus");
             return (Criteria) this;
         }
 
-        public Criteria andLockStatusNotEqualTo(Boolean value) {
+        public Criteria andLockStatusNotEqualTo(Integer value) {
             addCriterion("lock_status <>", value, "lockStatus");
             return (Criteria) this;
         }
 
-        public Criteria andLockStatusGreaterThan(Boolean value) {
+        public Criteria andLockStatusGreaterThan(Integer value) {
             addCriterion("lock_status >", value, "lockStatus");
             return (Criteria) this;
         }
 
-        public Criteria andLockStatusGreaterThanOrEqualTo(Boolean value) {
+        public Criteria andLockStatusGreaterThanOrEqualTo(Integer value) {
             addCriterion("lock_status >=", value, "lockStatus");
             return (Criteria) this;
         }
 
-        public Criteria andLockStatusLessThan(Boolean value) {
+        public Criteria andLockStatusLessThan(Integer value) {
             addCriterion("lock_status <", value, "lockStatus");
             return (Criteria) this;
         }
 
-        public Criteria andLockStatusLessThanOrEqualTo(Boolean value) {
+        public Criteria andLockStatusLessThanOrEqualTo(Integer value) {
             addCriterion("lock_status <=", value, "lockStatus");
             return (Criteria) this;
         }
 
-        public Criteria andLockStatusIn(List<Boolean> values) {
+        public Criteria andLockStatusIn(List<Integer> values) {
             addCriterion("lock_status in", values, "lockStatus");
             return (Criteria) this;
         }
 
-        public Criteria andLockStatusNotIn(List<Boolean> values) {
+        public Criteria andLockStatusNotIn(List<Integer> values) {
             addCriterion("lock_status not in", values, "lockStatus");
             return (Criteria) this;
         }
 
-        public Criteria andLockStatusBetween(Boolean value1, Boolean value2) {
+        public Criteria andLockStatusBetween(Integer value1, Integer value2) {
             addCriterion("lock_status between", value1, value2, "lockStatus");
             return (Criteria) this;
         }
 
-        public Criteria andLockStatusNotBetween(Boolean value1, Boolean value2) {
+        public Criteria andLockStatusNotBetween(Integer value1, Integer value2) {
             addCriterion("lock_status not between", value1, value2, "lockStatus");
             return (Criteria) this;
         }
@@ -448,52 +449,52 @@ public class UserPoExample {
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusEqualTo(Boolean value) {
+        public Criteria andDeleteStatusEqualTo(Integer value) {
             addCriterion("delete_status =", value, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusNotEqualTo(Boolean value) {
+        public Criteria andDeleteStatusNotEqualTo(Integer value) {
             addCriterion("delete_status <>", value, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusGreaterThan(Boolean value) {
+        public Criteria andDeleteStatusGreaterThan(Integer value) {
             addCriterion("delete_status >", value, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusGreaterThanOrEqualTo(Boolean value) {
+        public Criteria andDeleteStatusGreaterThanOrEqualTo(Integer value) {
             addCriterion("delete_status >=", value, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusLessThan(Boolean value) {
+        public Criteria andDeleteStatusLessThan(Integer value) {
             addCriterion("delete_status <", value, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusLessThanOrEqualTo(Boolean value) {
+        public Criteria andDeleteStatusLessThanOrEqualTo(Integer value) {
             addCriterion("delete_status <=", value, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusIn(List<Boolean> values) {
+        public Criteria andDeleteStatusIn(List<Integer> values) {
             addCriterion("delete_status in", values, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusNotIn(List<Boolean> values) {
+        public Criteria andDeleteStatusNotIn(List<Integer> values) {
             addCriterion("delete_status not in", values, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusBetween(Boolean value1, Boolean value2) {
+        public Criteria andDeleteStatusBetween(Integer value1, Integer value2) {
             addCriterion("delete_status between", value1, value2, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusNotBetween(Boolean value1, Boolean value2) {
+        public Criteria andDeleteStatusNotBetween(Integer value1, Integer value2) {
             addCriterion("delete_status not between", value1, value2, "deleteStatus");
             return (Criteria) this;
         }

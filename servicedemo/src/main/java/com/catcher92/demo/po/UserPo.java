@@ -26,12 +26,12 @@ public class UserPo extends BaseEntity implements Serializable {
     /**
      * 锁定状态 0未锁定，1已锁定
      */
-    private Boolean lockStatus;
+    private Integer lockStatus;
 
     /**
      * 删除状态 0未删除，1已删除
      */
-    private Boolean deleteStatus;
+    private Integer deleteStatus;
 
     /**
      * 创建时间
@@ -114,7 +114,7 @@ public class UserPo extends BaseEntity implements Serializable {
      *
      * @return lockStatus
      */
-    public Boolean getLockStatus() {
+    public Integer getLockStatus() {
         return lockStatus;
     }
 
@@ -123,7 +123,7 @@ public class UserPo extends BaseEntity implements Serializable {
      *
      * @param lockStatus
      */
-    public void setLockStatus(Boolean lockStatus) {
+    public void setLockStatus(Integer lockStatus) {
         this.lockStatus = lockStatus;
     }
 
@@ -132,7 +132,7 @@ public class UserPo extends BaseEntity implements Serializable {
      *
      * @return deleteStatus
      */
-    public Boolean getDeleteStatus() {
+    public Integer getDeleteStatus() {
         return deleteStatus;
     }
 
@@ -141,7 +141,7 @@ public class UserPo extends BaseEntity implements Serializable {
      *
      * @param deleteStatus
      */
-    public void setDeleteStatus(Boolean deleteStatus) {
+    public void setDeleteStatus(Integer deleteStatus) {
         this.deleteStatus = deleteStatus;
     }
 

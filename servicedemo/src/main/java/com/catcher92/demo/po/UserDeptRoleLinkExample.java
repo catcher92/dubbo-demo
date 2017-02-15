@@ -3,11 +3,12 @@
  */
 package com.catcher92.demo.po;
 
+import com.catcher92.demo.framework.bean.BaseExample;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class UserDeptRoleLinkExample {
+public class UserDeptRoleLinkExample extends BaseExample {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -358,52 +359,52 @@ public class UserDeptRoleLinkExample {
             return (Criteria) this;
         }
 
-        public Criteria andIsParttimeEqualTo(Boolean value) {
+        public Criteria andIsParttimeEqualTo(Integer value) {
             addCriterion("is_parttime =", value, "isParttime");
             return (Criteria) this;
         }
 
-        public Criteria andIsParttimeNotEqualTo(Boolean value) {
+        public Criteria andIsParttimeNotEqualTo(Integer value) {
             addCriterion("is_parttime <>", value, "isParttime");
             return (Criteria) this;
         }
 
-        public Criteria andIsParttimeGreaterThan(Boolean value) {
+        public Criteria andIsParttimeGreaterThan(Integer value) {
             addCriterion("is_parttime >", value, "isParttime");
             return (Criteria) this;
         }
 
-        public Criteria andIsParttimeGreaterThanOrEqualTo(Boolean value) {
+        public Criteria andIsParttimeGreaterThanOrEqualTo(Integer value) {
             addCriterion("is_parttime >=", value, "isParttime");
             return (Criteria) this;
         }
 
-        public Criteria andIsParttimeLessThan(Boolean value) {
+        public Criteria andIsParttimeLessThan(Integer value) {
             addCriterion("is_parttime <", value, "isParttime");
             return (Criteria) this;
         }
 
-        public Criteria andIsParttimeLessThanOrEqualTo(Boolean value) {
+        public Criteria andIsParttimeLessThanOrEqualTo(Integer value) {
             addCriterion("is_parttime <=", value, "isParttime");
             return (Criteria) this;
         }
 
-        public Criteria andIsParttimeIn(List<Boolean> values) {
+        public Criteria andIsParttimeIn(List<Integer> values) {
             addCriterion("is_parttime in", values, "isParttime");
             return (Criteria) this;
         }
 
-        public Criteria andIsParttimeNotIn(List<Boolean> values) {
+        public Criteria andIsParttimeNotIn(List<Integer> values) {
             addCriterion("is_parttime not in", values, "isParttime");
             return (Criteria) this;
         }
 
-        public Criteria andIsParttimeBetween(Boolean value1, Boolean value2) {
+        public Criteria andIsParttimeBetween(Integer value1, Integer value2) {
             addCriterion("is_parttime between", value1, value2, "isParttime");
             return (Criteria) this;
         }
 
-        public Criteria andIsParttimeNotBetween(Boolean value1, Boolean value2) {
+        public Criteria andIsParttimeNotBetween(Integer value1, Integer value2) {
             addCriterion("is_parttime not between", value1, value2, "isParttime");
             return (Criteria) this;
         }
@@ -418,52 +419,52 @@ public class UserDeptRoleLinkExample {
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusEqualTo(Boolean value) {
+        public Criteria andDeleteStatusEqualTo(Integer value) {
             addCriterion("delete_status =", value, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusNotEqualTo(Boolean value) {
+        public Criteria andDeleteStatusNotEqualTo(Integer value) {
             addCriterion("delete_status <>", value, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusGreaterThan(Boolean value) {
+        public Criteria andDeleteStatusGreaterThan(Integer value) {
             addCriterion("delete_status >", value, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusGreaterThanOrEqualTo(Boolean value) {
+        public Criteria andDeleteStatusGreaterThanOrEqualTo(Integer value) {
             addCriterion("delete_status >=", value, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusLessThan(Boolean value) {
+        public Criteria andDeleteStatusLessThan(Integer value) {
             addCriterion("delete_status <", value, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusLessThanOrEqualTo(Boolean value) {
+        public Criteria andDeleteStatusLessThanOrEqualTo(Integer value) {
             addCriterion("delete_status <=", value, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusIn(List<Boolean> values) {
+        public Criteria andDeleteStatusIn(List<Integer> values) {
             addCriterion("delete_status in", values, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusNotIn(List<Boolean> values) {
+        public Criteria andDeleteStatusNotIn(List<Integer> values) {
             addCriterion("delete_status not in", values, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusBetween(Boolean value1, Boolean value2) {
+        public Criteria andDeleteStatusBetween(Integer value1, Integer value2) {
             addCriterion("delete_status between", value1, value2, "deleteStatus");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteStatusNotBetween(Boolean value1, Boolean value2) {
+        public Criteria andDeleteStatusNotBetween(Integer value1, Integer value2) {
             addCriterion("delete_status not between", value1, value2, "deleteStatus");
             return (Criteria) this;
         }

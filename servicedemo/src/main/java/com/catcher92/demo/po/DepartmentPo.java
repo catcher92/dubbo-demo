@@ -16,7 +16,7 @@ public class DepartmentPo extends BaseEntity implements Serializable {
     /**
      * 删除状态 0未删除，1已删除
      */
-    private Boolean deleteStatus;
+    private Integer deleteStatus;
 
     /**
      * 创建时间
@@ -63,7 +63,7 @@ public class DepartmentPo extends BaseEntity implements Serializable {
      *
      * @return deleteStatus
      */
-    public Boolean getDeleteStatus() {
+    public Integer getDeleteStatus() {
         return deleteStatus;
     }
 
@@ -72,7 +72,7 @@ public class DepartmentPo extends BaseEntity implements Serializable {
      *
      * @param deleteStatus
      */
-    public void setDeleteStatus(Boolean deleteStatus) {
+    public void setDeleteStatus(Integer deleteStatus) {
         this.deleteStatus = deleteStatus;
     }
 
