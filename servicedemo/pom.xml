@@ -95,6 +95,12 @@
             <artifactId>mybatis-generator-core</artifactId>
         </dependency>
         <!--*********************************************mybatis end*********************************************-->
+        <!--*********************************************pagehelper start*********************************************-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+        </dependency>
+        <!--*********************************************pagehelper end*********************************************-->
     </dependencies>
 
     <build>
