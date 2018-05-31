@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <artifactId>basedemo</artifactId>
+        <artifactId>base-demo</artifactId>
         <groupId>com.catcher92.demo</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../basedemo/pom.xml</relativePath>
+        <relativePath>../base-demo/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>consumerdemo</artifactId>
+    <artifactId>consumer-demo</artifactId>
     <packaging>war</packaging>
     <name>${project.artifactId}</name>
     <version>${project.parent.version}</version>
@@ -95,7 +95,7 @@
 
         <dependency>
             <groupId>com.catcher92.demo</groupId>
-            <artifactId>providerdemo</artifactId>
+            <artifactId>provider-demo</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -108,6 +108,6 @@
     </dependencies>
 
     <build>
-        <finalName>consumerdemo</finalName>
+        <finalName>consumer-demo</finalName>
     </build>
 </project>

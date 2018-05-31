@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.catcher92.demo</groupId>
-    <artifactId>basedemo</artifactId>
+    <artifactId>base-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -21,7 +21,7 @@
         <logback.ext.spring.version>0.1.4</logback.ext.spring.version>
         <zookeeper.version>3.4.9</zookeeper.version>
         <zookeeper.client.version>0.1</zookeeper.client.version>
-        <dubbo.version>2.5.4-SNAPSHOT</dubbo.version>
+        <dubbo.version>2.5.4</dubbo.version>
         <java.version>1.8</java.version>
         <maven.compiler.plugin.version>2.3.2</maven.compiler.plugin.version>
         <mysql.driver.version>5.1.30</mysql.driver.version>
